@@ -48,7 +48,7 @@ export function ProjectCard({
     >
       <Link
         href={href || "#"}
-        className={cn("block cursor-pointer", className)}
+        className={cn("block cursor-pointer relative h-60 w-full overflow-hidden", className)}
       >
         {video && (
           <video
@@ -57,18 +57,21 @@ export function ProjectCard({
             loop
             muted
             playsInline
-            className="pointer-events-none mx-auto h-40 w-full object-cover object-top" // needed because random black line at bottom of video
+            className="pointer-events-none mx-auto absolute z-0 top-0 left-0 h-full w-full object-cover object-top"
           />
         )}
         {image && (
           <Image
             src={image}
             alt={title}
-            className="h-40 w-full overflow-hidden object-cover object-top"
+            layout="fill" // This makes the image fill the parent container
+            objectFit="cover" // Adjusts the image's sizing within the container
+            objectPosition="top"
+            className="absolute z-0 top-0 left-0 h-full w-full object-cover object-top"
           />
         )}
       </Link>
-      <CardHeader className="px-2">
+      <CardHeader className="px-2 relative z-10">
         <div className="space-y-1">
           <CardTitle className="mt-1 text-base">{title}</CardTitle>
           <time className="font-sans text-xs">{dates}</time>
@@ -80,7 +83,7 @@ export function ProjectCard({
           </Markdown>
         </div>
       </CardHeader>
-      <CardContent className="mt-auto flex flex-col px-2">
+      <CardContent className="mt-auto flex flex-col px-2 relative z-10">
         {tags && tags.length > 0 && (
           <div className="mt-2 flex flex-wrap gap-1">
             {tags?.map((tag) => (
@@ -95,7 +98,7 @@ export function ProjectCard({
           </div>
         )}
       </CardContent>
-      <CardFooter className="px-2 pb-2">
+      <CardFooter className="px-2 pb-2 relative z-10">
         {links && links.length > 0 && (
           <div className="flex flex-row flex-wrap items-start gap-1">
             {links?.map((link, idx) => (
