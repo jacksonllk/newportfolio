@@ -1,21 +1,10 @@
 /** @type {import('next').NextConfig} */
 
-
-import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
-// Added comment to trigger a new build cache on Cloudflare Pages
 const nextConfig = {
   reactStrictMode: true,
-  distDir: 'out',
-  webpack(config, { isServer }) {
-    if (!isServer) {
-      config.plugins.push(new BundleAnalyzerPlugin({
-        analyzerMode: 'static',
-        reportFilename: 'bundles/client.html',
-        openAnalyzer: false,
-      }));
-    }
-    return config;
-  },
+  distDir: 'out',  // Ensure this matches the output directory
+  output: 'export' // Use the new export configuration
 };
 
 export default nextConfig;
+
