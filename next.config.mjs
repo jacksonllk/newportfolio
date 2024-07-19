@@ -2,7 +2,7 @@
 
 
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
-
+// Added comment to trigger a new build cache on Cloudflare Pages
 const nextConfig = {
   reactStrictMode: true,
   distDir: 'out',
