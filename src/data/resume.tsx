@@ -17,7 +17,7 @@ export const DATA = {
     "Node.js",
     "Python",
     "MongoDB",
-    "Postgres",
+    "Supabase",
   ],
   contact: {
     email: "jackson.llk@gmail.com",
@@ -45,7 +45,7 @@ export const DATA = {
       badges: [],
       location: "Malaysia",
       title: "Director",
-      logoUrl: "/emcor.jpg",
+      logoUrl: "/emcorlogo.png",
       start: "October 2011",
       end: "Current",
       description:
@@ -98,19 +98,19 @@ export const DATA = {
     {
       title: "Tenderpanel.com",
       href: "https://www.tenderpanel.com",
-      dates: "Oct 2023 - Present",
+      dates: "Oct 2023 - Present (Founder)",
       active: true,
       description:
-        "A platform that aggregates Malaysian government tenders for contractors.",
+        "A platform that aggregates Malaysian tenders for contractors.",
       technologies: [
         "Next.js",
         "Javacript",
         "Python",
         "MongoDB",
         "TailwindCSS",
-        "Stripe",
         "Shadcn UI",
         "Daisy UI",
+        "Stripe",
       ],
       links: [
         {
@@ -120,6 +120,32 @@ export const DATA = {
         },
       ],
       image: "/tenderpanel-og-image.png",
+      video:
+        "",
+    },
+    {
+      title: "Writemore.io",
+      href: "https://www.writemore.io",
+      dates: "July 2024 - Present (Co-Building)",
+      active: true,
+      description:
+        "A webapp that builds consistent writing habits",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "Firebase",
+        "Flowbite",
+        "TailwindCSS",
+        "Stripe",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.writemore.io",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/writemore-image.png",
       video:
         "",
     },
