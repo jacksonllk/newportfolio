@@ -3,7 +3,7 @@ import withBundleAnalyzer from '@next/bundle-analyzer'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  distDir: 'out',
+  // distDir: 'out',
   
   // Enable image optimization
   images: {
@@ -34,6 +34,7 @@ const nextConfig = {
   // Experimental features
   experimental: {
     scrollRestoration: true,
+    outputStandalone: true,
   },
 };
 
