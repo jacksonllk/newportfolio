@@ -15,9 +15,6 @@ const nextConfig = {
   // Enable gzip compression
   compress: true,
 
-  // Minimize CSS
-  optimizeCss: true,
-
   // Configure webpack
   webpack: (config, { dev, isServer }) => {
     // Enable tree shaking
@@ -34,9 +31,8 @@ const nextConfig = {
   // Enable SWC minification for JavaScript and CSS
   swcMinify: true,
 
-  // Disable unnecessary features
+  // Experimental features
   experimental: {
-    optimizeCss: true,
     scrollRestoration: true,
   },
 };
