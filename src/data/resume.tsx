@@ -119,7 +119,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/tenderpanel-og-image.png",
+      image: "/tenderpanel-og.png",
       video:
         "",
     },
@@ -134,8 +134,8 @@ export const DATA = {
         "Next.js",
         "Typescript",
         "Firebase",
-        "Flowbite",
         "TailwindCSS",
+        "Shadcn UI",
         "Stripe",
       ],
       links: [
@@ -145,7 +145,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/writemore-image.png",
+      image: "/writemore-og.png",
       video:
         "",
     },
