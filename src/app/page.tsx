@@ -25,7 +25,7 @@ export default function Page() {
           </div>
         </div>
       </section> */}
-      {/* <section id="about">
+      <section id="about">
         <h2 className="text-xl font-bold">About</h2>
         <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
           {DATA.summary}
@@ -128,7 +128,7 @@ export default function Page() {
             </p>
           </div>
         </div>
-      </section> */}
+      </section>
     </main>
   );
 }
