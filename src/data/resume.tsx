@@ -11,11 +11,13 @@ export const DATA = {
   summary:
     "One day mid 2022, I decided to pick up programming and self-learn it with online courses and YouTube. I befriended other programmers on X who helped me along the way. I launched my first product in October 2023, and have been building and learning ever since. Feel free to reach out!",
   avatarUrl: "/me.png",
+  ogImage: "/og-image.png",
   skills: [
     "React",
     "Next.js",
     "Node.js",
     "Python",
+    "TailwindCSS",
     "MongoDB",
     "Supabase",
   ],
