@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
-  output: 'export',
-  distDir: 'out',
-  images: {
-    unoptimized: true,
-  },
-  trailingSlash: true,
+  reactStrictMode: true,
+  output: 'standalone',
+  distDir: 'out',  // Ensure this matches the output directory
 };
 
-module.exports = nextConfig;
+export default nextConfig;
+
