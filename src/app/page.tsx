@@ -8,8 +8,8 @@ import Markdown from "react-markdown";
 
 export default function Page() {
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-10">
-      <section id="hero">
+    <main className="flex flex-col min-h-[100dvh] space-y-10"> testing
+      {/* <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
             <Avatar className="size-28 border">
@@ -24,8 +24,8 @@ export default function Page() {
             </div>
           </div>
         </div>
-      </section>
-      <section id="about">
+      </section> */}
+      {/* <section id="about">
         <h2 className="text-xl font-bold">About</h2>
         <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
           {DATA.summary}
@@ -128,7 +128,7 @@ export default function Page() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }
