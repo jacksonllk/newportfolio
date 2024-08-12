@@ -2,7 +2,7 @@
 
 const nextConfig = {
   reactStrictMode: true,
-  output: 'standalone',
+  output: 'export',
   distDir: 'out',  // Ensure this matches the output directory
 };
 
