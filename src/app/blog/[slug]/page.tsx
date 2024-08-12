@@ -1,9 +1,10 @@
-import { getPost } from "@/data/blog";
+import { getPost, getAllPosts } from "@/data/blog";
 import { DATA } from "@/data/resume";
 import { formatDate } from "@/lib/utils";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
+import path from "path";
 
 export async function generateMetadata({
   params,
@@ -44,6 +45,13 @@ export async function generateMetadata({
       images: [ogImage],
     },
   };
+}
+
+export async function generateStaticParams() {
+  const posts = await getAllPosts(path.join(process.cwd(), "content"));
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
 }
 
 export default async function Blog({
