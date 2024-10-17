@@ -48,7 +48,7 @@ export function ProjectCard({
     >
       <Link
         href={href || "#"}
-        className={cn("block cursor-pointer relative h-60 w-full overflow-hidden", className)}
+        className={cn("block cursor-pointer relative w-full overflow-hidden", className)}
       >
         {video && (
           <video
@@ -64,10 +64,11 @@ export function ProjectCard({
           <Image
             src={image}
             alt={title}
-            layout="fill" // This makes the image fill the parent container
-            objectFit="cover" // Adjusts the image's sizing within the container
-            objectPosition="top"
-            className="absolute z-0 top-0 left-0 h-full w-full object-cover object-top"
+            layout="responsive" 
+            width={500} 
+            height={300} 
+            objectFit="contain" 
+            className="z-0 top-0 left-0 w-full h-auto" 
           />
         )}
       </Link>
