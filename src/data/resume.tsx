@@ -121,7 +121,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/tenderpanel-og.png",
+      image: "/tenderpanel-og-image.png",
       video:
         "",
     },
@@ -147,7 +147,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/writemore-og.png",
+      image: "/writemore-og-image.png",
       video:
         "",
     },
