@@ -13,13 +13,13 @@ export const DATA = {
   avatarUrl: "/me.png",
   ogImage: "/og-image.png",
   skills: [
-    "React",
     "Next.js",
     "Node.js",
     "Python",
-    "TailwindCSS",
+    "Tailwind",
     "MongoDB",
     "Supabase",
+    "Firebase"
   ],
   contact: {
     email: "jackson.llk@gmail.com",
@@ -106,10 +106,9 @@ export const DATA = {
         "A platform that aggregates Malaysian tenders for contractors.",
       technologies: [
         "Next.js",
-        "Javacript",
         "Python",
         "MongoDB",
-        "TailwindCSS",
+        "Tailwind",
         "Shadcn UI",
         "Daisy UI",
         "Stripe",
@@ -136,7 +135,7 @@ export const DATA = {
         "Next.js",
         "Typescript",
         "Firebase",
-        "TailwindCSS",
+        "Tailwind",
         "Shadcn UI",
         "Stripe",
       ],
