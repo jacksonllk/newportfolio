@@ -146,7 +146,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/writemore-og.png",
+      image: "/writemore-og-image-ph.png",
       video:
         "",
     },
